@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Yanone+Kaffeesatz&display=swap');
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    margin-top: -25px;
+    height: 110vh;
+    width: 100vw;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin-top: 20vh;
+    font-size: 80px;
+    text-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+
+span{
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    text-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.start-button{
+    color: white;
+    margin-top: 20vh;
+    font-size: 18px;
+    letter-spacing: 1px;
+    height: 60px;
+    width: 200px;
+    background: rgb(195, 230, 235);
+    border-radius: 35px;
+    font-family: 'Merriweather', serif;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 30px 5px rgba(31, 36, 44, 0.5);
+}
+
+.start-button:hover{
+    filter: brightness(105%);
+}
+
+.start-button:focus{
+    outline: none;
+}
+
+.start-button:active{
+    transform: translateY(2px);
+    box-shadow: 0px 1px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dots-container{
+    height: 100vh;
+    width: 100vw;
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    display: flex;
+
+}
+
+canvas{
+    position: absolute;
+    z-index: 10;
+    background: transparent;
+    display: block;
+}
+
+.dots {
+    color: black;
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    transition: color 2s;
+}
+
+
+.hidden{
+    display: none;
+}
+
+/* Dots Container Dark Theme */
+
+.darkTheme{
+    transition: all 10s;
+    background: black;
+}
+
+/* Positions */
+
+.position1{
+    transition: transform 3s;
+    transform: translate(50vw, 17vh);
+}
+
+.position2{
+    transition: transform 3s;
+    transform: translate(-30vw, 21vh);
+}
+
+.position3{
+    transition: transform 4s;
+    transform: translate(45vw, 1vh);
+}
+
+.position4{
+    transition: transform 3s;
+    transform: translate(-2vw, 2vh);
+}
+
+.position5{
+    transition: transform 3s;
+    transform: translate(30vw, 62vh);
+}
+
+.position6{
+    transition: transform 4s;
+    transform: translate(4vw, 82vh);
+}
+
+.position7{
+    transition: transform 3s;
+    transform: translate(38vw, 2vh);
+}
+
+.position8{
+    transition: transform 4s;
+    transform: translate(12vw, 73vh);
+}
+
+.position9{
+    transition: transform 2.5s;
+    transform: translate(22vw, 35vh);
+}
+
+.position10{
+    transition: transform 3s;
+    transform: translate(2vw, 85vh);
+}
+
+.position11{
+    transition: transform 3.5s;
+    transform: translate(-6vw, 90vh);
+}
+
+.position12{
+    transition: transform 4s;
+    transform: translate(15vw, 55vh);
+}
+
+.position13{
+    transition: transform 3s;
+    transform: translate(20vw, 55vh);
+}
+
+.position14{
+    transition: transform 3s;
+    transform: translate(30vw, 10vh);
+}
+
+.position15{
+    transition: transform 3s;
+    transform: translate(-4vw, 75vh);
+}
+
+.position16{
+    transition: transform 3s;
+    transform: translate(-24vw, 85vh);
+}
+
+.position17{
+    transition: transform 3s;
+    transform: translate(-7vw, 80vh);
+}
+
+.position18{
+    transition: transform 3s;
+    transform: translate(-19vw, 25vh);
+}
+
+.position19{
+    transition: transform 3s;
+    transform: translate(17vw, 45vh);
+}
+
+.position20{
+    transition: transform 3s;
+    transform: translate(38vw, 15vh);
+}
+
+/* Layers */
+#dot2{
+z-index: 2;
+}
+
+#dot3{
+z-index: 1;
+}
+
+#dot4{
+z-index: 2;
+}
+
+#dot5{
+z-index: 1;
+}
+
+#dot6{
+z-index: 2;
+}
+
+#dot7{
+z-index: 1;
+}
+
+#dot8{
+z-index: 2;
+}
+
+#dot9{
+z-index: 1;
+}
+
+#dot10{
+    z-index: 2;
+}
+    
+#dot12{
+    z-index: 2;
+}
+
+#dot13{
+    z-index: 1;
+}
+
+#dot14{
+    z-index: 2;
+}
+
+#dot11{
+    z-index: 1;
+}
+
+#dot15{
+    z-index: 2;
+}
